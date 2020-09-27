@@ -1,0 +1,5 @@
+-cp src
+-hl main.hl
+# -cpp ./out
+-main Main
+-debug

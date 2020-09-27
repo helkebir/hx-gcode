@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "haxe",
+			"args": "active configuration",
+			"problemMatcher": [
+				"$haxe-absolute",
+				"$haxe",
+				"$haxe-error",
+				"$haxe-trace"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "haxe: active configuration"
+		},
+		{
+			"label": "run hl",
+			"command": "hl",
+			"args": ["main.hl"],
+			"type": "shell"
+		},
+		{
+			"label": "debug and run hl",
+			"type": "shell",
+			"dependsOn": [
+				"haxe: active configuration",
+				"run hl"
+			]
+		}
+	]
+}
